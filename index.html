@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otra Cara Del Planeta</title>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+   
+</head>
+<body>
+    <header></header>
+    <div class="container">
+        <h1 class="text-center pt-5 pb-4">Actividades en Fuerteventura</h1>
+        <button id="btn-nuevo" type="button"  class="btn btn-outline-success">Nueva</button>
+        <hr>
+        <div class='row' id="contenedor-actividades" style="display:block">          
+                <!-- tarjetas con las actividades -->          
+        </div>
+        <!-- Formulario para insertar nuevo documento den la colección--> 
+      <div class="container-form" id="formulario" style="display:none">
+        <h2>NUEVA ACTIVIDAD</h2>
+        <form>
+            <div class="form-group">
+                <label for="nombre">Nombre de la Actividad</label>
+                <input type="text" class="form-control" placeholder="Nombre actividad" id="nombre">
+            </div>
+            <div class="form-group">
+                <label for="direccion">Dirección donde se realiza</label>
+                <input type="text" class="form-control" placeholder="dirección" id="direccion">
+            </div>
+            <div class="form-group">
+                <label for="contacto">Datos de contacto</label>
+                <input type="text" class="form-control" placeholder="télefono, email...." id="contacto">
+            </div>
+            <div class="form-group">
+                <label for="horario">Horario de la actividad</label>
+                <input type="text" class="form-control" placeholder="horario" id="horario">
+            </div>
+            <div class="form-group">
+                <label for="precio">Precio de la actividad</label>
+                <input type="text" class="form-control" placeholder="Precio" id="precio">
+            </div>
+            <div class="form-group">
+                <label for="descripcion">Descripcion de la actividad</label>
+                <textarea class="form-control" id="descripcion" placeholder="Escribe una breve descripción de la actividad" rows="3"></textarea>
+              </div>           
+            <div class="btn-guardar"></div>
+            <button type="submit" class="btn btn-info btn-lg btn-responsive" id="btn-guardar"> <span class="glyphicon glyphicon-search"></span> Guardar</button>
+        </form>
+        <p id="json"></p>
+    </div>
+    
+</div>
+      <footer></footer>
+    <script type="module" src="/js/main.js"></script>
+</body>
+</html>
